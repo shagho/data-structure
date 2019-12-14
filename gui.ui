@@ -41,297 +41,302 @@
     <item row="0" column="0">
      <layout class="QGridLayout" name="gridLayout_4">
       <item row="0" column="0">
-       <layout class="QHBoxLayout" name="horizontalLayout_2">
-        <item>
-         <spacer name="horizontalSpacer_2">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>40</width>
-            <height>20</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item>
-         <widget class="QLabel" name="time_label">
-          <property name="minimumSize">
-           <size>
-            <width>121</width>
-            <height>20</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>121</width>
-            <height>20</height>
-           </size>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-         </widget>
-        </item>
-       </layout>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="time_label">
+        <property name="minimumSize">
+         <size>
+          <width>121</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>121</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
       </item>
       <item row="1" column="0">
-       <widget class="QSplitter" name="splitter">
-        <property name="orientation">
-         <enum>Qt::Vertical</enum>
+       <widget class="QGroupBox" name="information_groupBox">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>201</height>
+         </size>
         </property>
-        <widget class="QWidget" name="">
-         <layout class="QHBoxLayout" name="horizontalLayout">
-          <item>
-           <widget class="QGroupBox" name="information_groupBox">
-            <property name="minimumSize">
-             <size>
-              <width>0</width>
-              <height>161</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>16777215</width>
-              <height>161</height>
-             </size>
-            </property>
-            <property name="title">
-             <string>&amp;Information</string>
-            </property>
-            <layout class="QGridLayout" name="gridLayout_3">
-             <item row="0" column="0">
-              <layout class="QGridLayout" name="gridLayout_2">
-               <item row="1" column="2">
-                <widget class="QComboBox" name="relation_combobox">
-                 <item>
-                  <property name="text">
-                   <string>Relationship</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>transaction</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>Ownership</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>contact</string>
-                  </property>
-                 </item>
-                </widget>
-               </item>
-               <item row="2" column="1">
-                <widget class="QComboBox" name="sub_to_comboBox"/>
-               </item>
-               <item row="2" column="2">
-                <widget class="QComboBox" name="sub_relation_combobox"/>
-               </item>
-               <item row="1" column="0">
-                <widget class="QComboBox" name="from_comboBox">
-                 <item>
-                  <property name="text">
-                   <string>person</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>car</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>home</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>phone</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>bank account</string>
-                  </property>
-                 </item>
-                </widget>
-               </item>
-               <item row="3" column="2">
-                <widget class="QLineEdit" name="relation_lineEdit"/>
-               </item>
-               <item row="3" column="0">
-                <widget class="QLineEdit" name="from_lineEdit"/>
-               </item>
-               <item row="2" column="0">
-                <widget class="QComboBox" name="sub_comboBox"/>
-               </item>
-               <item row="0" column="0">
-                <widget class="QLabel" name="from_label">
-                 <property name="text">
-                  <string>From:</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="1" column="1">
-                <widget class="QComboBox" name="to_comboBox">
-                 <item>
-                  <property name="text">
-                   <string>person</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>car</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>home</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>phone</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>bank account</string>
-                  </property>
-                 </item>
-                </widget>
-               </item>
-               <item row="3" column="1">
-                <widget class="QLineEdit" name="to_lineEdit">
-                 <property name="text">
-                  <string/>
-                 </property>
-                </widget>
-               </item>
-               <item row="0" column="2">
-                <widget class="QLabel" name="relation_label">
-                 <property name="text">
-                  <string>Relation:</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="0" column="1">
-                <widget class="QLabel" name="to_label">
-                 <property name="text">
-                  <string>To:</string>
-                 </property>
-                </widget>
-               </item>
-              </layout>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>201</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>&amp;Information</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <property name="sizeConstraint">
+          <enum>QLayout::SetNoConstraint</enum>
+         </property>
+         <item row="0" column="0">
+          <layout class="QGridLayout" name="gridLayout_2">
+           <property name="sizeConstraint">
+            <enum>QLayout::SetNoConstraint</enum>
+           </property>
+           <item row="3" column="1">
+            <widget class="QLineEdit" name="to_lineEdit">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="from_label">
+             <property name="text">
+              <string>From:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QComboBox" name="sub_comboBox"/>
+           </item>
+           <item row="1" column="1">
+            <widget class="QComboBox" name="to_comboBox">
+             <item>
+              <property name="text">
+               <string>person</string>
+              </property>
              </item>
-            </layout>
+             <item>
+              <property name="text">
+               <string>car</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>home</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>phone</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>bank account</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QComboBox" name="relation_combobox">
+             <item>
+              <property name="text">
+               <string>Relationship</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>transaction</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Ownership</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>contact</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="3" column="2">
+            <widget class="QLineEdit" name="relation_lineEdit"/>
+           </item>
+           <item row="1" column="0">
+            <widget class="QComboBox" name="from_comboBox">
+             <item>
+              <property name="text">
+               <string>person</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>car</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>home</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>phone</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>bank account</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLineEdit" name="from_lineEdit"/>
+           </item>
+           <item row="2" column="2">
+            <widget class="QComboBox" name="sub_relation_combobox"/>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="to_label">
+             <property name="text">
+              <string>To:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QComboBox" name="sub_to_comboBox"/>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLabel" name="relation_label">
+             <property name="text">
+              <string>Relation:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QPushButton" name="show_graph">
+             <property name="text">
+              <string>Show graph</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QPushButton" name="show_content">
+             <property name="text">
+              <string>Show content</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="2" column="0" colspan="3">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QPushButton" name="show_contacts">
+            <property name="text">
+             <string>show contacts</string>
+            </property>
            </widget>
           </item>
-          <item>
-           <spacer name="horizontalSpacer">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="show_relationship">
+            <property name="text">
+             <string>show relationships</string>
             </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QPushButton" name="show_ownership">
+            <property name="text">
+             <string>show ownership</string>
             </property>
-           </spacer>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QPushButton" name="show_transactios">
+            <property name="text">
+             <string>show transactions</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="show_home">
+            <property name="text">
+             <string>show home</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="show_bank_accounts">
+            <property name="text">
+             <string>show bank accounts</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QPushButton" name="show_cars">
+            <property name="text">
+             <string>show cars</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QPushButton" name="show_persons">
+            <property name="text">
+             <string>show persons</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="4">
+           <widget class="QPushButton" name="show_phones">
+            <property name="text">
+             <string>show phones</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0" colspan="5">
+           <widget class="QTableView" name="show_content_table">
+            <property name="font">
+             <font>
+              <family>B Nazanin</family>
+             </font>
+            </property>
+            <property name="editTriggers">
+             <set>QAbstractItemView::NoEditTriggers</set>
+            </property>
+           </widget>
           </item>
          </layout>
-        </widget>
-        <widget class="QWidget" name="">
-         <layout class="QVBoxLayout" name="verticalLayout">
-          <item>
-           <layout class="QGridLayout" name="gridLayout">
-            <item row="0" column="0">
-             <widget class="QPushButton" name="show_contacts">
-              <property name="text">
-               <string>show contacts</string>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="1">
-             <widget class="QPushButton" name="show_relationship">
-              <property name="text">
-               <string>show relationships</string>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="2">
-             <widget class="QPushButton" name="show_ownership">
-              <property name="text">
-               <string>show ownership</string>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="3">
-             <widget class="QPushButton" name="show_transactios">
-              <property name="text">
-               <string>show transactions</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="0">
-             <widget class="QPushButton" name="show_home">
-              <property name="text">
-               <string>show home</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="1">
-             <widget class="QPushButton" name="show_bank_accounts">
-              <property name="text">
-               <string>show bank accounts</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="2">
-             <widget class="QPushButton" name="show_cars">
-              <property name="text">
-               <string>show cars</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="3">
-             <widget class="QPushButton" name="show_persons">
-              <property name="text">
-               <string>show persons</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="4">
-             <widget class="QPushButton" name="show_phones">
-              <property name="text">
-               <string>show phones</string>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="0" colspan="5">
-             <widget class="QTableView" name="show_content_table">
-              <property name="font">
-               <font>
-                <family>B Nazanin</family>
-               </font>
-              </property>
-              <property name="editTriggers">
-               <set>QAbstractItemView::NoEditTriggers</set>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-         </layout>
-        </widget>
-       </widget>
+        </item>
+       </layout>
       </item>
      </layout>
     </item>
