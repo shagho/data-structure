@@ -1,15 +1,14 @@
 import sys
-import networkx as nx
 from gui import Ui_MainWindow
 from PyQt5.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBox
 from PyQt5.QtGui import QImage, QBrush, QPalette
 from PyQt5.QtCore import QSize, QTimer, QTime
 import pandas as pd
 from pandas_model import pandasModel
-from datetime import datetime
 import itertools as IT
 import logging
 import multiprocessing as mp
+from graph import *
 
 
 class Window(QMainWindow, Ui_MainWindow):
@@ -514,7 +513,7 @@ class Window(QMainWindow, Ui_MainWindow):
                 for pair in iter(inqueues.get, sentinel):
                     source, target = pair
                     try:
-                        y = nx.has_path(tr, source=source, target=target)
+                        y = has_path(tr, source=source, target=target)
                         # r = nx.all_simple_paths(tr, source=source, target=target, cutoff=10)
                         if y:
                             print(source, target)
@@ -547,7 +546,7 @@ class Window(QMainWindow, Ui_MainWindow):
             sentinel = None
 
             transaction = pd.read_csv(self.edge_csv_files[0][3])
-            tr = nx.from_pandas_edgelist(transaction, 'from', 'to', create_using=nx.DiGraph())
+            tr = from_pandas_edgelist(transaction, 'from', 'to')
             df = pd.read_csv(self.node_csv_files[0][3])
             employees = df[(df['work'].str.contains("بندر")) | (df['work'].str.contains('گمرک'))]
             smugglers = df[df['work'].str.contains('قاچاقچی')]
