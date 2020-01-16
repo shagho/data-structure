@@ -42,6 +42,11 @@
      <layout class="QGridLayout" name="gridLayout_4">
       <item row="0" column="0">
        <spacer name="horizontalSpacer_2">
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+         </font>
+        </property>
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>
@@ -57,15 +62,29 @@
        <widget class="QLabel" name="time_label">
         <property name="minimumSize">
          <size>
-          <width>121</width>
+          <width>60</width>
           <height>20</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>121</width>
+          <width>60</width>
           <height>20</height>
          </size>
+        </property>
+        <property name="sizeIncrement">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::RightToLeft</enum>
         </property>
         <property name="text">
          <string/>
@@ -86,6 +105,11 @@
           <height>201</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+         </font>
+        </property>
         <property name="title">
          <string>&amp;Information</string>
         </property>
@@ -100,6 +124,11 @@
            </property>
            <item row="3" column="1">
             <widget class="QLineEdit" name="to_lineEdit">
+             <property name="font">
+              <font>
+               <pointsize>13</pointsize>
+              </font>
+             </property>
              <property name="text">
               <string/>
              </property>
@@ -107,16 +136,32 @@
            </item>
            <item row="0" column="0">
             <widget class="QLabel" name="from_label">
+             <property name="font">
+              <font>
+               <pointsize>13</pointsize>
+              </font>
+             </property>
              <property name="text">
               <string>From:</string>
              </property>
             </widget>
            </item>
            <item row="2" column="0">
-            <widget class="QComboBox" name="sub_comboBox"/>
+            <widget class="QComboBox" name="sub_comboBox">
+             <property name="font">
+              <font>
+               <pointsize>13</pointsize>
+              </font>
+             </property>
+            </widget>
            </item>
            <item row="1" column="1">
             <widget class="QComboBox" name="to_comboBox">
+             <property name="font">
+              <font>
+               <pointsize>13</pointsize>
+              </font>
+             </property>
              <item>
               <property name="text">
                <string>person</string>
@@ -146,9 +191,14 @@
            </item>
            <item row="1" column="2">
             <widget class="QComboBox" name="relation_combobox">
+             <property name="font">
+              <font>
+               <pointsize>13</pointsize>
+              </font>
+             </property>
              <item>
               <property name="text">
-               <string>Relationship</string>
+               <string>relationship</string>
               </property>
              </item>
              <item>
@@ -158,7 +208,7 @@
              </item>
              <item>
               <property name="text">
-               <string>Ownership</string>
+               <string>ownership</string>
               </property>
              </item>
              <item>
@@ -169,10 +219,21 @@
             </widget>
            </item>
            <item row="3" column="2">
-            <widget class="QLineEdit" name="relation_lineEdit"/>
+            <widget class="QLineEdit" name="relation_lineEdit">
+             <property name="font">
+              <font>
+               <pointsize>13</pointsize>
+              </font>
+             </property>
+            </widget>
            </item>
            <item row="1" column="0">
             <widget class="QComboBox" name="from_comboBox">
+             <property name="font">
+              <font>
+               <pointsize>13</pointsize>
+              </font>
+             </property>
              <item>
               <property name="text">
                <string>person</string>
@@ -201,37 +262,75 @@
             </widget>
            </item>
            <item row="3" column="0">
-            <widget class="QLineEdit" name="from_lineEdit"/>
+            <widget class="QLineEdit" name="from_lineEdit">
+             <property name="font">
+              <font>
+               <pointsize>13</pointsize>
+              </font>
+             </property>
+            </widget>
            </item>
            <item row="2" column="2">
-            <widget class="QComboBox" name="sub_relation_combobox"/>
+            <widget class="QComboBox" name="sub_relation_combobox">
+             <property name="font">
+              <font>
+               <pointsize>13</pointsize>
+              </font>
+             </property>
+            </widget>
            </item>
            <item row="0" column="1">
             <widget class="QLabel" name="to_label">
+             <property name="font">
+              <font>
+               <pointsize>13</pointsize>
+              </font>
+             </property>
              <property name="text">
               <string>To:</string>
              </property>
             </widget>
            </item>
            <item row="2" column="1">
-            <widget class="QComboBox" name="sub_to_comboBox"/>
+            <widget class="QComboBox" name="sub_to_comboBox">
+             <property name="font">
+              <font>
+               <pointsize>13</pointsize>
+              </font>
+             </property>
+            </widget>
            </item>
            <item row="0" column="2">
             <widget class="QLabel" name="relation_label">
+             <property name="font">
+              <font>
+               <pointsize>13</pointsize>
+              </font>
+             </property>
              <property name="text">
               <string>Relation:</string>
              </property>
             </widget>
            </item>
            <item row="4" column="0">
-            <widget class="QPushButton" name="show_graph">
+            <widget class="QPushButton" name="analyze">
+             <property name="font">
+              <font>
+               <pointsize>13</pointsize>
+              </font>
+             </property>
              <property name="text">
-              <string>Show graph</string>
+              <string>Analyze data</string>
              </property>
             </widget>
            </item>
            <item row="4" column="1">
             <widget class="QPushButton" name="show_content">
+             <property name="font">
+              <font>
+               <pointsize>13</pointsize>
+              </font>
+             </property>
              <property name="text">
               <string>Show content</string>
              </property>
@@ -244,6 +343,11 @@
       </item>
       <item row="1" column="1">
        <spacer name="horizontalSpacer">
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+         </font>
+        </property>
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>
@@ -261,6 +365,11 @@
          <layout class="QGridLayout" name="gridLayout">
           <item row="0" column="0">
            <widget class="QPushButton" name="show_contacts">
+            <property name="font">
+             <font>
+              <pointsize>13</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>show contacts</string>
             </property>
@@ -268,6 +377,11 @@
           </item>
           <item row="0" column="1">
            <widget class="QPushButton" name="show_relationship">
+            <property name="font">
+             <font>
+              <pointsize>13</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>show relationships</string>
             </property>
@@ -275,6 +389,11 @@
           </item>
           <item row="0" column="2">
            <widget class="QPushButton" name="show_ownership">
+            <property name="font">
+             <font>
+              <pointsize>13</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>show ownership</string>
             </property>
@@ -282,6 +401,11 @@
           </item>
           <item row="0" column="3">
            <widget class="QPushButton" name="show_transactios">
+            <property name="font">
+             <font>
+              <pointsize>13</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>show transactions</string>
             </property>
@@ -289,6 +413,11 @@
           </item>
           <item row="1" column="0">
            <widget class="QPushButton" name="show_home">
+            <property name="font">
+             <font>
+              <pointsize>13</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>show home</string>
             </property>
@@ -296,6 +425,11 @@
           </item>
           <item row="1" column="1">
            <widget class="QPushButton" name="show_bank_accounts">
+            <property name="font">
+             <font>
+              <pointsize>13</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>show bank accounts</string>
             </property>
@@ -303,6 +437,11 @@
           </item>
           <item row="1" column="2">
            <widget class="QPushButton" name="show_cars">
+            <property name="font">
+             <font>
+              <pointsize>13</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>show cars</string>
             </property>
@@ -310,6 +449,11 @@
           </item>
           <item row="1" column="3">
            <widget class="QPushButton" name="show_persons">
+            <property name="font">
+             <font>
+              <pointsize>13</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>show persons</string>
             </property>
@@ -317,6 +461,11 @@
           </item>
           <item row="1" column="4">
            <widget class="QPushButton" name="show_phones">
+            <property name="font">
+             <font>
+              <pointsize>13</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>show phones</string>
             </property>
@@ -327,10 +476,32 @@
             <property name="font">
              <font>
               <family>B Nazanin</family>
+              <pointsize>13</pointsize>
              </font>
+            </property>
+            <property name="mouseTracking">
+             <bool>true</bool>
+            </property>
+            <property name="acceptDrops">
+             <bool>true</bool>
             </property>
             <property name="editTriggers">
              <set>QAbstractItemView::NoEditTriggers</set>
+            </property>
+            <property name="dragEnabled">
+             <bool>false</bool>
+            </property>
+            <property name="dragDropOverwriteMode">
+             <bool>false</bool>
+            </property>
+            <property name="dragDropMode">
+             <enum>QAbstractItemView::NoDragDrop</enum>
+            </property>
+            <property name="defaultDropAction">
+             <enum>Qt::CopyAction</enum>
+            </property>
+            <property name="selectionMode">
+             <enum>QAbstractItemView::ExtendedSelection</enum>
             </property>
            </widget>
           </item>
